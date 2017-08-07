@@ -1,0 +1,220 @@
+* { box-sizing:border-box; }
+
+/* basic stylings ------------------------------------------ */
+.container 		{ 
+  font-family:'Roboto';
+  width:600px; 
+  margin:30px auto 0; 
+  display:block; 
+  background:#FFF;
+  padding:10px 50px 50px;
+}
+h2 		 { 
+  text-align:center; 
+  margin-bottom:50px; 
+}
+h2 small { 
+  font-weight:normal; 
+  color:#888; 
+  display:block; 
+}
+.footer 	{ text-align:center; }
+.footer a  { color:#53B2C8; }
+
+/* form starting stylings ------------------------------- */
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+
+
+/* CUSTOM INPUT CLASSES LOGIN
+-------------------------------------------------- */
+
+
+/* CLOSE BUTTON TOP OF LOGIN  TO  RETURN BACK 
+      NOT  CONFIGURED
+ */
+
+.closebtn{
+  float: right;
+}
+
+.leftLogin{
+  float: left;
+  white-space: nowrap;
+}
+
+.center{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+/*    LOGIN  PAGE SUBMIT  BUTTON
+===============================================  */
+
+.inputbtn{
+  margin-top: 16px;
+
+}
+
+
+.lgn {
+  display: inline-block;
+  width: 60%;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 25px;
+}
+
+.btn-login {
+  color: #2E6DA4;
+  background-color: white;
+  border-color: #2e6da4;
+}
+.btn-login:focus,
+.btn-login.focus {
+  color: #fff;
+  background-color: #286090;
+  border-color: #122b40;
+}
+.btn-login:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.btn-login:active,
+.btn-login.active,
+.open > .dropdown-toggle.btn-login {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+#contentleft{
+  float:right;
+  margin-right:40px;
+  white-space: nowrap;
+}
+#left {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 0;  
+  padding: 0;
+  border-right: 1px solid slategrey;
+  height:200px;
+}
+
+#right {
+  position: relative;
+  float: right;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height:200px;
+}

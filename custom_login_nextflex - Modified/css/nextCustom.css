@@ -1,0 +1,83 @@
+
+/* CUSTOM CSS CLASSES INDEX LOGIN
+-------------------------------------------------- */
+
+.auth{
+  margin-top: 0px;
+  padding-top: 1px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+    -webkit-transition: width 2s, height 4s; /* Safari */
+    transition: width 2s, height 4s;  
+}
+
+.authslide{
+  position: absolute;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+/*   VERTICAL LINE BETWEEN LOGIN
+---------------------------------------------------------------
+.vr { 
+    
+    width: 1px;
+    background-color:dimgray;
+    position:absolute;
+    top:0px;
+    bottom:0;
+    left:50%;
+}*/
+/*
+.authreplace{
+   display: true;
+}
+
+
+/*  DROPDOWN HOVER CUSTOM
+--------------------------------------------------------------------------- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+    margin-left: 0px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 0px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
